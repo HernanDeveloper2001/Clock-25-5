@@ -1,0 +1,11 @@
+#container {
+  width: 700px;
+  border-radius: 50%;
+  height: 700px;
+  box-shadow: 3px 3px 20px 10px #000;
+  background-image: url("../assets/imgs/back-clock.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  display: grid;
+  place-items: center;
+}

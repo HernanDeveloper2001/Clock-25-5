@@ -1,11 +1,13 @@
+import Clock from "./components/Clock"
+import "./styles/_global.scss"
 
 function App() {
 
-
   return (
-    <>
-      Empezando proyecto reloj 25 + 5
-    </>
+    <div id="App">
+      <h1>Clock 25 + 5</h1>
+      <Clock />
+    </div>
   )
 }
 
