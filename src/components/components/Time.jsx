@@ -1,18 +1,16 @@
 import "../../styles/Timer.scss";
-import Buttons from "./Buttons";
-import Controls from "./Controls";
+import Counter from "./Counter";
+
+
 
 const Time = () => {
+
   return (
-    <div id="Timer">
-      <Controls 
-      counter="5"
-      identificador="break-label" />
-      <Buttons />
-      <Controls 
-      counter="25"
-      identificador="session-label" />
-    </div>
+    <>
+      <div id="Timer">
+        <Counter />
+      </div>
+    </>
   )
 }
 

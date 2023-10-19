@@ -1,0 +1,17 @@
+#timer-control {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 80%;
+}
+
+#timer-label {
+  text-align: center;
+}
+
+
+.desactive:disabled {
+  background-color: #ccc;
+  color: #888;
+  cursor: not-allowed;
+}
