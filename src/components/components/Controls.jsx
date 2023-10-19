@@ -1,14 +1,31 @@
-import { BiUpArrowAlt,BiDownArrowAlt } from "react-icons/bi"
-import "../../styles/Controls.scss"
+import { BiUpArrowAlt,BiDownArrowAlt } from "react-icons/bi";
+import "../../styles/Controls.scss";
 
-const Controls = ({ counter,identificador }) => {
+
+const Controls = ({ identificador,name,data,sessionIncrement,sessionDecrement,start }) => {
+
   return (
     <div className="length-control">
-      <span>Break Length</span>
+      <span>{name}</span>
       <div id={identificador}>
-        <button id="session-decrement"><BiDownArrowAlt /></button>
-        <span>{ counter }</span>
-        <button id="session-increment"><BiUpArrowAlt /></button>
+        <button 
+          id="session-decrement"
+          onClick={sessionDecrement}>
+          <i>
+            <BiDownArrowAlt size={40} />
+          </i>
+        </button>
+        <span>
+          { data }
+        </span>
+        <button 
+          className={start ? "desactive" : null}
+          id="session-increment" 
+          onClick={sessionIncrement}>
+          <i>
+            <BiUpArrowAlt size={40} />
+          </i>
+        </button>
       </div>
     </div>
   )
