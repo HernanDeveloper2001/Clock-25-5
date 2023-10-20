@@ -18,9 +18,6 @@ const dataSessionReducer = createSlice({
         return state - action.payload
       }
     },
-    sessionInitialState: (state, action) => {
-      return state = action.payload
-    },
     sessionStart:(state, action) => {
       return state = action.payload
     },
@@ -40,8 +37,24 @@ const dataBreakReducer = createSlice({
   name: "dataClockBreak",
   initialState: dataBreak,
   reducers: {
-    updateTimeBreak: (state, action) => {
-      console.log(state, action);
+    breakIncrement: (state, action) => {
+      if(state < 60){
+        return state + action.payload
+      }
+    },
+    breakDecrement: (state, action) => {
+      if(state > 1){
+        return state - action.payload
+      }
+    },
+    breakStart:(state, action) => {
+      return state = action.payload
+    },
+    breakStop: (state, action) => {
+      return state = action.payload 
+    },
+    breakReset: (state, action) => {
+      return state = action.payload
     },
   },
 });
@@ -62,6 +75,11 @@ export const {
 } = dataSessionReducer.actions;
 
 export const { 
-  updateTimeBreak } = dataBreakReducer.actions;
+  breakIncrement,
+  breakDecrement,
+  breakStart,
+  breakStop,
+  breakReset,
+} = dataBreakReducer.actions;
 
 export default rootReducer;

@@ -1,8 +1,8 @@
 import { useSelector, useDispatch } from "react-redux";
 import { useState, useEffect } from "react";
-import { sessionStart,sessionStop,sessionReset } from "../../features/data-clock/clockReducers"
-import { sessionIncrement,sessionDecrement,sessionInitialState } from "../../features/data-clock/clockReducers"
-
+import { sessionStart,sessionStop,sessionReset,sessionIncrement,sessionDecrement  } from "../../features/data-clock/clockReducers"
+import {Howl} from "howler"
+import finishSound from "../../music/finish.wav"
 
 const StartClock = () => {
 
@@ -32,6 +32,16 @@ const StartClock = () => {
     return () => clearInterval(timer);
   }, [minutes, seconds, start]);
 
+
+  if(minutes === 0 && seconds === 1) {
+    const soundFinish = new Howl({
+      src: finishSound,
+      volume: 0.5,
+      html5: true,
+    })
+    soundFinish.play()
+  }
+
   const stopSession = () => {
     setStart(false);
     sessionDispatch(sessionStop(minutes))
@@ -41,8 +51,6 @@ const StartClock = () => {
     if(minutes < 60){
       setMinutes(prevMinutes => prevMinutes + 1)
       sessionDispatch(sessionIncrement(1));
-    }else {
-      alert("solo se puede aumentar hasta  60 minutos")
     }
   }
 
@@ -50,8 +58,6 @@ const StartClock = () => {
     if(minutes > 1){
       setMinutes(minutes - 1)
       sessionDispatch(sessionDecrement(1));
-    }else {
-      alert("solo se puede reducir hasta 1 minutos")
     }
   }
   
@@ -66,7 +72,7 @@ const StartClock = () => {
     setStart(true);
     sessionDispatch(sessionStart(minutes))
   }
-
+  
 
   return {
     start,
