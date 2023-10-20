@@ -4,12 +4,19 @@ import "../../styles/Counter.scss";
 import StartClock from "../func/StartClockSession";
 import Controls from "./Controls";
 import { useSelector } from "react-redux";
+<<<<<<< HEAD
 import { useEffect, useState } from "react";
+=======
+>>>>>>> 524533d0444e151ae9bf6b8d043963ac376f7f51
 
 const Counter = () => {
   const sessionTime = useSelector(store => store.reducer.dataSession);
   const breakTime = useSelector(store => store.reducer.dataBreak);
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 524533d0444e151ae9bf6b8d043963ac376f7f51
   const { 
     startSession,
     minutes,
@@ -21,6 +28,10 @@ const Counter = () => {
     handleSessionDecrement
   } = StartClock();
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 524533d0444e151ae9bf6b8d043963ac376f7f51
   return (
     <div id="timer-control">
 
