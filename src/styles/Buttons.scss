@@ -1,0 +1,11 @@
+#timer-control {
+  width: 30%;
+  display: flex;
+  justify-content: center;
+}
+
+@media screen and (max-width: 480px) {
+  #timer-control {
+    width: 100%;
+  }
+}

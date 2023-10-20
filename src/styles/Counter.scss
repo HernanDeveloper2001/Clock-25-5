@@ -2,16 +2,38 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 80%;
 }
 
 #timer-label {
   text-align: center;
 }
 
-
 .desactive:disabled {
   background-color: #ccc;
   color: #888;
   cursor: not-allowed;
+}
+
+@media screen and (max-width:480px) {
+  #timer-label {
+    margin: 1rem 0;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width:1024px) {
+  #timer-label {
+    margin: 1rem 0;
+  }
+
+}
+
+@media screen and (min-width:1025px) {
+  #timer-label {
+    margin: 1rem 0;
+  }
+
+  #timer-control {
+    flex-direction: row;
+    width: 100%;
+  }
 }
