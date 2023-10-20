@@ -11,7 +11,10 @@
   },
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.7",
+<<<<<<< HEAD
     "howler": "^2.2.4",
+=======
+>>>>>>> 338621cf94700b09be0b19bde1697bddef59eb3e
     "react": "^18.2.0",
     "react-countdown-clock": "^2.10.0",
     "react-dom": "^18.2.0",
