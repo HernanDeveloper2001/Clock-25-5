@@ -1,17 +1,30 @@
 .length-control {
-  width: 100%;
-  display: grid;
-  place-items: center;
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 30%;
+  gap: 1rem;
 }
 
 #break-label {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  width: 100%;
   align-items: center;
 }
 
 #session-label {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+  width: 100%;
   align-items: center;
+}
+
+@media screen and (max-width: 480px) {
+  .length-control {
+    width: 100%;
+    background-color: red;
+  }
 }
