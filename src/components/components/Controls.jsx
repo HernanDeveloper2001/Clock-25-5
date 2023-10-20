@@ -2,7 +2,7 @@ import { BiUpArrowAlt,BiDownArrowAlt } from "react-icons/bi";
 import "../../styles/Controls.scss";
 
 
-const Controls = ({ identificador,name,data,sessionIncrement,sessionDecrement,start }) => {
+const Controls = ({ identificador,name,data,increment,decrement,start }) => {
 
   return (
     <div className="length-control">
@@ -10,7 +10,7 @@ const Controls = ({ identificador,name,data,sessionIncrement,sessionDecrement,st
       <div id={identificador}>
         <button 
           id="session-decrement"
-          onClick={sessionDecrement}>
+          onClick={decrement}>
           <i>
             <BiDownArrowAlt size={40} />
           </i>
@@ -21,7 +21,7 @@ const Controls = ({ identificador,name,data,sessionIncrement,sessionDecrement,st
         <button 
           className={start ? "desactive" : null}
           id="session-increment" 
-          onClick={sessionIncrement}>
+          onClick={increment}>
           <i>
             <BiUpArrowAlt size={40} />
           </i>
