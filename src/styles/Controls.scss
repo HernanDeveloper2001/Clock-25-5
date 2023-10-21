@@ -1,5 +1,4 @@
 .length-control {
-<<<<<<< HEAD
   width: auto;
   display: flex;
   flex-direction: column;
@@ -7,27 +6,17 @@
   justify-content: center;
   width: 30%;
   gap: 1rem;
-=======
-  width: 100%;
-  display: grid;
-  place-items: center;
->>>>>>> 8b902cd4c7a723f3ca71e838559d0945668ae1e6
 }
 
 #break-label {
   display: flex;
-<<<<<<< HEAD
   justify-content: space-around;
   width: 100%;
-=======
-  justify-content: center;
->>>>>>> 8b902cd4c7a723f3ca71e838559d0945668ae1e6
   align-items: center;
 }
 
 #session-label {
   display: flex;
-<<<<<<< HEAD
   justify-content: space-around;
   width: 100%;
   align-items: center;
@@ -37,8 +26,4 @@
   .length-control {
     width: 100%;
   }
-=======
-  justify-content: center;
-  align-items: center;
->>>>>>> 8b902cd4c7a723f3ca71e838559d0945668ae1e6
 }
