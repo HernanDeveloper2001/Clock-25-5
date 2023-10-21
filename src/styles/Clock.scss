@@ -1,22 +1,35 @@
 #container {
-  width: 40%;
   border-radius: 5px;
   padding: 1rem;
   box-shadow: 3px 3px 20px 10px #10206f;
   background-color: #000c47;
-  height: 400px;
+  height: auto;
 }
 
 @media screen and (max-width: 480px) {
   #container {
-    height: 500px;
+    height: auto;
     width: 90%;
   }
 }
 
 @media screen and (min-width:481px) and (max-width:1024px){
   #container {
-    height: 300px;
+    height: auto;
     width: 90%;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  #container {
+    height: auto;
+    width: 90%;
+  }
+}
+
+@media screen and (min-width: 1025px){
+  #container {
+    height: auto;
+    width: 60%;
   }
 }

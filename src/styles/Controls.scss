@@ -4,7 +4,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 30%;
   gap: 1rem;
 }
 
@@ -25,6 +24,20 @@
 @media screen and (max-width: 480px) {
   .length-control {
     width: 100%;
-    background-color: red;
+    padding: 10px 0;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  .length-control {
+    width: 100%;
+    padding: 10px 0;
+  }
+}
+
+@media screen and (min-width: 1025px) {
+  .length-control {
+    width: auto;
+    padding: 10px 0;
   }
 }
