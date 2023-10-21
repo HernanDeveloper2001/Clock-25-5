@@ -1,14 +1,15 @@
 @font-face {
-  font-family: "Mukta";
-  src: url("../font/YujiHentaiganaAkari-Regular.ttf");
+  font-family: "Playpen";
+  src: url("../font/PlaypenSans-VariableFont_wght.ttf");
 }
 
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: 'Mukta', sans-serif;
+  font-family: 'Playpen', sans-serif;
   color: #fff;
+  font-size: 24px;
 }
 
 h1 {
