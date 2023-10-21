@@ -14,26 +14,25 @@
   cursor: not-allowed;
 }
 
-@media screen and (max-width:480px) {
-  #timer-label {
-    margin: 1rem 0;
+@media screen and (max-width: 480px) {
+  #timer-control {
+    width: 100%;
+    justify-content: space-around;
   }
 }
 
-@media screen and (min-width: 481px) and (max-width:1024px) {
-  #timer-label {
-    margin: 1rem 0;
+@media screen and (min-width: 481px) and (max-width: 1024px) {
+  #timer-control {
+    width: 100%;
+    justify-content: space-around;
   }
-
 }
 
-@media screen and (min-width:1025px) {
-  #timer-label {
-    margin: 1rem 0;
-  }
-
+@media screen and (min-width: 1025px) {
   #timer-control {
     flex-direction: row;
+    justify-content: space-around;
     width: 100%;
+
   }
 }

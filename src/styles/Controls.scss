@@ -24,17 +24,20 @@
 @media screen and (max-width: 480px) {
   .length-control {
     width: 100%;
+    padding: 10px 0;
   }
 }
 
-@media screen and (min-width: 481px) and (max-width:1024px) {
+@media screen and (min-width: 481px) and (max-width: 1024px) {
   .length-control {
     width: 100%;
+    padding: 10px 0;
   }
 }
 
 @media screen and (min-width: 1025px) {
   .length-control {
     width: auto;
+    padding: 10px 0;
   }
 }
