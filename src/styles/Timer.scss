@@ -29,9 +29,3 @@
     justify-content: space-around;
   }
 }
-
-@media screen and (min-width: 481px) and (max-width: 1024px) {
-  #Timer {
-    flex-direction: column;
-  }
-}
